@@ -54,7 +54,7 @@
 
         <?php
 
-            $bdd = mysqli_connect("localhost", "root", "", "moduleconnexion");
+            $bdd = mysqli_connect("localhost:3306", "mze-idrisse", "dztrzv5v6", "idrisse-mze-hamadi_module-connexion");
             $rqt = mysqli_query($bdd, "SELECT * FROM utilisateurs");
             $rec = mysqli_fetch_assoc($rqt); // on récupère toutes les informations
             $rslt = mysqli_fetch_all($rqt);
