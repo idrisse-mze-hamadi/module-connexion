@@ -21,7 +21,7 @@ if(isset($_POST["deconnexion"]))
 }
 //Modification du profil
 
-$bdd = mysqli_connect("localhost", "root", "", "moduleconnexion"); //On ce connecte a la base de donnée
+$bdd = mysqli_connect("localhost:3306", "mze-idrisse", "dztrzv5v6", "idrisse-mze-hamadi_module-connexion"); //On ce connecte a la base de donnée
 
 if (isset($_SESSION["login"])) // Quand on est connecté
 {
