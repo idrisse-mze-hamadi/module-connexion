@@ -17,7 +17,7 @@ if(isset($_SESSION["login"]))
 {
     header("location:index.php"); //permet de rediriger vers la page d'accueil une fois connecté.
 }
-$bdd = mysqli_connect("localhost:3306", "mze-idrisse", "******", "idrisse-mze-hamadi_module-connexion");
+$bdd = mysqli_connect("localhost:3306", "mze-idrisse", "dztrzv5v6", "idrisse-mze-hamadi_module-connexion");
 
 if (isset($_POST["connexion"])) // lorsqu'on ce connecte
 {
