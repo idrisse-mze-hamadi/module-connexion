@@ -42,14 +42,7 @@ if (isset($_SESSION["login"])) // Quand on est connecté
         $npassword = $_POST["npassword"];
         $rnpassword = $_POST["rnpassword"];
 
-        $rqt = mysqli_query($bdd, "SELECT * FROM utilisateurs WHERE login='$login' and password='$npassword'"); // Nous faisons une requête et on vérifie les informations.
-        $rr = mysqli_num_rows($rqt);
-        
-        if ($rr == 1)
-        {
-            echo "Le login ou le mot de passe sont déja pris!";
-        }
-        elseif ($rnpassword != $npassword)
+        if ($rnpassword != $npassword)
         {
             echo "Les mots de passe sont différents";
         }
